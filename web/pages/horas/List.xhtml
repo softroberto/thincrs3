@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            
+             <h:link outcome="/pages/admin/principal" value="REGRESAR" />  
+        <p:fieldset>
+            <p:dataTable>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="ID"/>
+                    </f:facet>
+                    <h:outputText value="Id"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Nombre"/>
+                    </f:facet>
+                    <h:outputText value="Nombre"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="Entrada"/>
+                    </f:facet>
+                    <h:outputText value="Entrada"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="salida"/>
+                    </f:facet>
+                    <h:outputText value="Salida"/>
+                </p:column>
+                 <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="noReporte"/>
+                    </f:facet>
+                    <h:outputText value="noReporte"/>
+                </p:column>
+                <p:column>
+                    <f:facet name="header">
+                        <h:outputText value="&nbsp;"/>
+                    </f:facet>
+                    <f:facet name="header">
+                        <h:link outcome="/pages/horas/view" value="Ver" /> 
+                         <h:link outcome="/pages/horas/Edit" value="Editar" /> 
+                          <h:link outcome="/pages/horas/Edit" value="Destroy" /> 
+              
+                    </f:facet>
+                   
+                    
+                </p:column>
+            </p:dataTable>
+        </p:fieldset>
+            
+        </h:form>
+    </h:body>
+</html>
+
